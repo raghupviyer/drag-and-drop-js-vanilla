@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag and Drop implementation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="box">
+      box 1
+      <div class="listContainer" id="container1" ondrop="drop(event)" ondragover="allowDrag(event)">
+        <div class="listItem" id="1" draggable="true" ondragstart="drag(event)">Content1</div>
+        <div class="listItem" id="2" draggable="true" ondragstart="drag(event)">Content2</div>
+        <div class="listItem" id="3" draggable="true" ondragstart="drag(event)">Content3</div>
+      </div>
+    </div>
+    <div class="box">
+      box 2
+      <div class="listContainer" id="container2" ondrop="drop(event)" ondragover="allowDrag(event)">
+        
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
